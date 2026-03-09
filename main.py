@@ -2,7 +2,8 @@
 from flask import Flask , render_template ,url_for,request# flask library se Flask ko import kar rahe h ko import kiya h
 import joblib#model ko load or save karne ke liye
 import numpy as np
-model=joblib.load(r'D:\Data science\Flask\Bike-price-prediction\liner_model.lb')
+model = joblib.load('linear_model.lb')
+
 # model=joblib.load('liner_model.lb')
 app=Flask(__name__)#app se object banaya h 
 @app.route('/')# ye decorator h iska kaam hota h function ka kaam change kar dena
